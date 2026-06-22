@@ -1,0 +1,21 @@
+{
+  "required" : [ "objectApiName", "searchText" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "objectApiName" : {
+      "title" : "Object API Name",
+      "description" : "API name of the object to search (any standard or custom object with a Name field).\n",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "searchText" : {
+      "title" : "Search Text",
+      "description" : "Name or partial name of the record to find.\n",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

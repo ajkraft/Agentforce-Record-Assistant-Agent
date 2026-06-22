@@ -1,0 +1,28 @@
+{
+  "required" : [ "objectApiName", "recordId", "fieldsJson" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "objectApiName" : {
+      "title" : "Object API Name",
+      "description" : "API name of the object to update (any standard or custom object the running user is allowed to update).\n",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "recordId" : {
+      "title" : "Record Id",
+      "description" : "Id of the record to update. Use Find Record first if only a name is known.\n",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "fieldsJson" : {
+      "title" : "Fields JSON",
+      "description" : "A JSON object mapping fieldApiName to the new value. Dates use yyyy-MM-dd.\n",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Finds a record by name and returns its Id. Use this to resolve lookups (such as the Account or Contact) before creating or updating a related record.</description>
+    <developerName>Find_Record</developerName>
+    <invocationTarget>RecordsAssistantFind</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Find_Record</localDeveloperName>
+    <masterLabel>Find Record</masterLabel>
+</GenAiFunction>

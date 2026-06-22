@@ -1,0 +1,21 @@
+{
+  "required" : [ "objectApiName", "fieldsJson" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "objectApiName" : {
+      "title" : "Object API Name",
+      "description" : "API name of the object to create (any standard or custom object the running user is allowed to create).\n",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "fieldsJson" : {
+      "title" : "Fields JSON",
+      "description" : "A JSON object mapping fieldApiName to value. Dates use yyyy-MM-dd. Resolve lookup fields to record Ids with Find Record first.\n",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

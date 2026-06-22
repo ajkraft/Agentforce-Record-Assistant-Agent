@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a new record of any standard or custom Salesforce object from a JSON map of field values. Resolve lookup fields to record Ids using Find Record before calling this.</description>
+    <developerName>Create_Record</developerName>
+    <invocationTarget>RecordsAssistantCreate</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Create_Record</localDeveloperName>
+    <masterLabel>Create Record</masterLabel>
+</GenAiFunction>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <agentTemplate>EmployeeCopilot__AgentforceEmployeeAgent</agentTemplate>
+    <agentType>AgentforceEmployeeAgent</agentType>
+    <botMlDomain>
+        <label>Records Assistant</label>
+        <name>Records_Assistant</name>
+    </botMlDomain>
+    <botSource>None</botSource>
+    <description>An employee AI agent that creates and updates Salesforce records on request across standard and custom objects. Agentforce Coworker delegates record writes to this agent.</description>
+    <label>Records Assistant</label>
+    <logPrivateConversationData>false</logPrivateConversationData>
+    <richContentEnabled>true</richContentEnabled>
+    <sessionTimeout>0</sessionTimeout>
+    <type>InternalCopilot</type>
+</Bot>

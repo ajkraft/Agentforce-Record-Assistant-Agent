@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Updates an existing record of any native Salesforce object from a JSON map of field values. Requires the record Id - use Find Record first if only a name is known.</description>
+    <developerName>Update_Record</developerName>
+    <invocationTarget>RecordsAssistantUpdate</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <localDeveloperName>Update_Record</localDeveloperName>
+    <masterLabel>Update Record</masterLabel>
+</GenAiFunction>

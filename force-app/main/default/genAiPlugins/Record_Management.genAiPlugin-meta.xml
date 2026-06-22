@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is selected when the user wants to create or update Salesforce records of any standard or custom object, or change fields on an existing record.</description>
+    <developerName>Record_Management</developerName>
+    <genAiFunctions>
+        <functionName>Find_Record</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_Record</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Update_Record</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>When the user asks to create a record that references another record by name (for example a child record that belongs to a parent, or an activity related to a person or record), FIRST call Find_Record to resolve each referenced name to its record Id, then pass those Ids in the fieldsJson of Create_Record using the appropriate lookup or relationship fields.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Build the fieldsJson as a JSON object of fieldApiName:value pairs. Include the fields the object requires, and map any user-supplied values to the correct field API names and picklist values, confirming when ambiguous. Format dates as yyyy-MM-dd.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+        <sortOrder>1</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When the user asks for a reminder or follow-up, create a Task with a Subject and a due date (resolving relative phrases like "tomorrow" to a concrete date), and link it to the relevant person or record via the appropriate relationship field.</description>
+        <developerName>instruction_2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_2</masterLabel>
+        <sortOrder>2</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>To change fields on an existing record, use Update_Record with the record Id (resolve it with Find_Record if you only have a name). After any create or update, tell the user what was saved and include the record link. Never invent record Ids. Do not delete records.</description>
+        <developerName>instruction_3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_3</masterLabel>
+        <sortOrder>3</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>Record_Management</localDeveloperName>
+    <masterLabel>Record Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to create and update Salesforce records on the user's behalf across standard and custom objects. You resolve referenced records by name before writing, confirm the key fields, and return a link to the saved record. You do not delete records, run reports, or perform unrelated analysis.</scope>
+</GenAiPlugin>
