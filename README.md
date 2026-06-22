@@ -6,7 +6,7 @@ the searching, research, and reasoning, and when the user asks it to *create* or
 something, it delegates to this agent, which performs the write and returns a link to the
 record.
 
-This closes a common gap: out of the box, Coworker can find and reason over records but does
+This closes a common gap as of June 22nd, 2026: out of the box, Coworker can find and reason over records but does
 not have a built-in tool to create or update them. Deploy this agent and assign its
 permission set, and Coworker gains reliable create/update capability across your objects.
 
